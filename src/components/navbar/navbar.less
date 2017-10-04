@@ -1,0 +1,136 @@
+.navbar{
+  position: fixed;
+  z-index: 7;
+  width: 100%;
+  height: 1.32267rem;
+  padding: .27733rem 0;
+  background-color: #fff;
+  &Logo{
+    position: absolute;
+    display: block;
+    left: .77867rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    width: 2.64533rem;
+    img{
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+  }
+  &User{
+    position: absolute;
+    display: block;
+    width: 1.024rem;
+    height: 1.024rem;
+    right: 30.13%;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    background: url("../../assets/imgs/noface.gif") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+  }
+  &Download{
+    position: absolute;
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    right: .42667rem;
+    width: 3.41333rem;
+    height: 1.024rem;
+    border: .02133rem solid #fb7299;
+    border-radius: .17067rem;
+    background-color: #fb7299;
+    p{
+      margin:0;
+      font-size: .55467rem;
+      line-height: 1.06667rem;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  &Classifiy{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 1.87733rem;
+    top: 1.856rem;
+    z-index: 5;
+    overflow: hidden;
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    &Left{
+      position: relative;
+      width: 90%;
+      padding-top: .256rem;
+      overflow: hidden;
+    }
+    &Right{
+      position: absolute;
+      top: 0;
+      width: 1.38667rem;
+      height: 1.87733rem;
+      right: .256rem;
+    }
+    img{
+        position:absolute;
+        top:60%;
+        transform:translateY(-50%);
+        display: block;
+        width: .68267rem;
+        margin: auto;
+    }
+    &Ul{
+      position: relative;
+      padding-left: 1.024rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      height: 1.87733rem;
+      white-space: nowrap;
+      padding-bottom: .21333rem;
+      -webkit-overflow-scrolling: touch;
+      z-index: 1;
+      -webkit-transform: translateZ(0);
+      -webkit-perspective: 1000;
+    }
+    &Li{
+      display: inline-block;
+      position:relative;
+      top:-0.4rem;
+      background-color: #fff;
+      margin-right: 1.49333rem;
+      text-decoration: none;
+      p{
+        width: 1.36533rem;
+        font-size: .59733rem;
+        line-height: 1.28rem;
+        text-align: center;
+        color: #757575;
+        border-bottom: .08533rem solid #fff;
+      }
+      .active{
+        width: 1.36533rem;
+        font-size: .59733rem;
+        line-height: 1.28rem;
+        text-align: center;
+        color: #fb7299;
+        border-bottom: .08533rem solid #fb7299;
+      }
+    }
+  }
+}
+
+

@@ -2,7 +2,7 @@
   <div class="M-banner">
     <swipe class="M-bannerMain">
         <swipe-item v-for="(item,idx) in items" key="item.pic">
-            <img :src="item.imgpic" alt="" />
+            <img :src="item.pic" alt="" />
         </swipe-item>
     </swipe>
   </div>
@@ -13,19 +13,18 @@
   
   var vueSwipe = require('vue-swipe')
   require('vue-swipe/dist/vue-swipe.css')
-  import $ from 'jquery'
   import { Swipe, SwipeItem } from 'vue-swipe'
   import pic1 from './1.jpg'
   import pic2 from './2.jpg'
   export default {
     name: 'banner',
+    props:['items'],
     components: {
       'swipe': Swipe,
       'swipe-item': SwipeItem
     },
     data () {
       return {
-        items: [{imgpic: pic1}, {imgpic: pic2}]
       }
     },
     
@@ -34,12 +33,18 @@
         console.log(data);
       }
 
-      this.$http.jsonp("https://api.bilibili.com/x/web-show/res/loc",{params: {pf:7,id:1695}}).then(function(res){
-        console.log("sd")
-            console.log(JSON.parse(res.bodyText))
-      },function(res){
-        console.log(res)
-      })
+      // axios.get("https://api.bilibili.com/x/web-show/res/loc?pf=7&id=1695").then(function(res){
+      //     console.log(res.data.data)
+      // },function(res){
+      //   console.log(res)
+      // })
+
+      // axios.get("/api").then(function(res){
+      //     console.log(res)
+      //     console.log("sd")
+      // },function(res){
+      //   console.log(res)
+      // })
     
     // $.ajax({
     //     url: "https://api.bilibili.com/x/web-show/res/loc?pf=7&id=1695",
